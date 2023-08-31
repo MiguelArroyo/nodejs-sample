@@ -14,5 +14,5 @@ jobs:
           jira_user: '${{ secrets.JIRA_USER }}'
           jira_token: '${{ secrets.JIRA_TOKEN }}'
           jira_project: 'CSI'
-          github_token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
+          #github_token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
           sync_direction: 'gh2jira'
