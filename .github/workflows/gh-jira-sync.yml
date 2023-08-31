@@ -3,7 +3,7 @@ on:
   #  manually triggered 
   workflow_dispatch:
 
-obs:
+jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
