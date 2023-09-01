@@ -10,10 +10,10 @@ jobs:
       - name: Sync alerts to Jira issues
         uses: github/ghas-jira-integration@v1
         with:
-          jira_url: '${{ vars.JIRA_URL }}' #'https://miguelarroyo.atlassian.net'
+          jira_url: '${{ vars.JIRA_URL }}'
           jira_user: '${{ secrets.JIRA_USER }}'
           jira_token: '${{ secrets.JIRA_TOKEN }}'
-          jira_project: 'CSI'
+          jira_project: '${{ vars.JIRA_PROJECT }}'
           github_token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
           sync_direction: 'gh2jira'
           #### Optionals #####
@@ -25,9 +25,9 @@ jobs:
       - name: Sync alerts to Jira issues
         uses: github/ghas-jira-integration@v1
         with:
-          jira_url: 'https://miguelarroyo.atlassian.net'
+          jira_url: '${{ vars.JIRA_URL }}'
           jira_user: '${{ secrets.JIRA_USER }}'
           jira_token: '${{ secrets.JIRA_TOKEN }}'
-          jira_project: 'CSI'
+          jira_project: '${{ vars.JIRA_PROJECT }}'
           github_token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
           sync_direction: 'jira2gh'
